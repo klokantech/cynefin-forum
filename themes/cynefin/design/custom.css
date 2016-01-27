@@ -222,6 +222,21 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   min-height: 300px;
 }
 
+/* Left nav */
+.BoxNewDiscussion{
+  padding-top: 0;
+}
+
+#Panel{}
+
+#Panel .FilterMenu li, .PanelInfo li{
+  padding: 10px 20px;
+}
+
+.MeBox{
+  padding: 20px 20px 10px 20px;
+}
+
 /* Conversations */
 .DataList .Item, .NarrowList .Item {
   margin: 0;
@@ -231,6 +246,16 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   border-bottom-width: 1px;
   position: relative;
   background: transparent;
+}
+
+.DataList .Item, .NarrowList .Item{
+  padding: 10px;
+}
+
+.Item.Read .Title, .Item.Read .BlockTitle {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 0;
 }
 
 /* Components */
@@ -252,19 +277,25 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   cursor: pointer;
   white-space: nowrap;
   box-shadow: 0 0 6px rgba(0,0,0,0.5);
-  background-image: linear-gradient(to bottom, #db4f00, #d23d00);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdb4f00', endColorstr='#ffd23d00', GradientType=0);
-  background-color: #db4f00;
-  border: 0;
-  color: #fff;
   font-size: 13px;
   line-height: 19px;
   padding: 4px 10px;
   text-shadow: none;
+  border: 0;
+  background-color: #d4c5a9;
+  background-image: linear-gradient(to bottom, #ede9dc, #E3DECF);
+  color: #464646;
 }
 
-.Button:hover {
+.Button.Primary{
+  background-image: linear-gradient(to bottom, #db4f00, #d23d00);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdb4f00', endColorstr='#ffd23d00', GradientType=0);
+  background-color: #db4f00;
+  color: #fff;
+}
+
+.Button.Primary:hover {
   color: #fff;
   background-image: linear-gradient(to bottom, #ff660f, #ff4e06);
   background-color: #ff660f;

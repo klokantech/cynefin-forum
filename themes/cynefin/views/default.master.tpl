@@ -39,7 +39,6 @@
       </div>
       <div id="Body">
         <div class="Row">
-          <div class="BreadcrumbsWrapper">{breadcrumbs}</div>
           <div class="Column PanelColumn" id="Panel">
             {module name="MeModule"}
             {asset name="Panel"}
