@@ -24,7 +24,7 @@
             <li><a href="http://cynefin.archiveswales.org.uk/en/">Home</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/en/tithe-maps/">Tithe maps</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/en/sample-page-2/">The Project</a></li>
-            <li class="active"><a href="http://cynefin.archiveswales.org.uk/en/forum/">Forum</a></li>
+            <li class="active"><a href="http://cynefin.archiveswales.org.uk/forum/">Forum</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/en/contributors/">Contributors</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/en/contact/">Contact</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/en/blog/">Blog</a></li>

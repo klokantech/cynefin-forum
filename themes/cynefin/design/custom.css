@@ -264,10 +264,8 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   display: inline-block;
   box-sizing: border-box;
   transition: all .2s ease-in-out;
-  border: 0;
   border-radius: 6px;
   position: relative;
-  font-weight: normal;
   text-transform: uppercase;
   font-family: "Lucida Grande",Arial,sans-serif;
   font-weight: bold;
@@ -280,6 +278,7 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   font-size: 13px;
   line-height: 19px;
   padding: 4px 10px;
+  margin: 5px 5px;
   text-shadow: none;
   border: 0;
   background-color: #d4c5a9;
