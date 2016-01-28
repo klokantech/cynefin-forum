@@ -70,7 +70,7 @@ class JsConnectPlugin extends Gdn_Plugin {
         $RegisterUrl = FormatString(GetValue('RegisterUrl', $Provider, ''), $Data);
 
         if ($RegisterUrl && !GetValue('NoRegister', $Options))
-            $RegisterLink = ' '.Anchor(sprintf(T('Register with %s', 'Register'), $Provider['Name']), $RegisterUrl, 'Button RegisterLink');
+            $RegisterLink = ' '.Anchor(T('Register'), $RegisterUrl, 'Button RegisterLink');
         else
             $RegisterLink = '';
 
@@ -83,14 +83,14 @@ class JsConnectPlugin extends Gdn_Plugin {
         if (GetValue('NoConnectLabel', $Options)) {
             $ConnectLabel = '';
         } else {
-            $ConnectLabel = '<span class="Username"></span><div class="ConnectLabel TextColor">'.sprintf(T('Sign In with %s'), $Provider['Name']).'</div>';
+            $ConnectLabel = '<span class="Username"></span><div class="ConnectLabel TextColor">'.T('Sign In').'</div>';
         }
 
         if (!C('Plugins.JsConnect.NoGuestCheck')) {
             $Result = '<div style="display: none" class="JsConnect-Container ConnectButton Small UserInfo" rel="'.$Url.'">';
 
             if (!GetValue('IsDefault', $Provider))
-                $Result .= '<div class="JsConnect-Guest">'.Anchor(sprintf(T('Sign In with %s'), $Provider['Name']), $SignInUrl, 'Button Primary SignInLink').$RegisterLink.'</div>';
+                $Result .= '<div class="JsConnect-Guest">'.Anchor(T('Sign In'), $SignInUrl, 'Button Primary SignInLink').$RegisterLink.'</div>';
 
             $Result .=
                 '<div class="JsConnect-Connect"><a class="ConnectLink">'.Img('https://cd8ba0b44a15c10065fd-24461f391e20b7336331d5789078af53.ssl.cf1.rackcdn.com/images/usericon_50.png', array('class' => 'ProfilePhotoSmall UserPhoto')).
@@ -100,7 +100,7 @@ class JsConnectPlugin extends Gdn_Plugin {
             $Result .= '</div>';
         } else {
             if (!GetValue('IsDefault', $Provider))
-                $Result = '<div class="JsConnect-Guest">'.Anchor(sprintf(T('Sign In with %s'), $Provider['Name']), $SignInUrl, 'Button Primary SignInLink').$RegisterLink.'</div>';
+                $Result = '<div class="JsConnect-Guest">'.Anchor(T('Sign In'), $SignInUrl, 'Button Primary SignInLink').$RegisterLink.'</div>';
         }
 
         return $Result;
