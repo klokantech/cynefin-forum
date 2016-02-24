@@ -36,6 +36,13 @@
           <span class="sep">|</span>
           <a href="http://cynefin.archiveswales.org.uk/en/" class="active" title="English">English</a>
         </div>
+        <div id="userbox">
+          <span id="userbox-name">...</span>
+          <span id="userbox-signout" style="display:none;">(<a href="http://cynefin.georeferencer.com/accounts/logout/?next=http://cynefin.archiveswales.org.uk/forum/">Sign Out</a>)</span>
+          <a id="userbox-signin" href="http://cynefin.georeferencer.com/accounts/login/?next=http://cynefin.archiveswales.org.uk/forum/" style="display:none;">
+            Sign In
+          </a>
+        </div>
       </div>
       <div id="Body">
         <div class="Row">
@@ -66,6 +73,9 @@
         </div>
       </div>
     </div>
+
     {event name="AfterBody"}
+    <script src="js/cynefinproject.js"></script>
+    <script src="http://cynefin.georeferencer.com/auth/jsconnect?client_id=1283165969&amp;callback=jsconnect_cb"></script>
   </body>
 </html>
