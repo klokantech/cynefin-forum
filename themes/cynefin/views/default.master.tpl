@@ -62,7 +62,6 @@
       </div>
       <div id="Foot">
         <div class="Row">
-          <a href="">KlokanTech</a>
           {asset name="Foot"}
         </div>
       </div>

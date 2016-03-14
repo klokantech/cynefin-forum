@@ -57,7 +57,7 @@ class MultilingualPlugin extends Gdn_Plugin {
       $Attrs = array('class' => 'LocaleOption');
 
       // Mark active link
-      if(Gdn::Locale()->Current() === substr($UrlCode, 0, 2)){
+      if(substr(Gdn::Locale()->Current(), 0, 2) === substr($UrlCode, 0, 2)){
         $Attrs['class'] .= ' Active';
       }
       return Wrap(Anchor(ucwords($Name), $Url), 'span', $Attrs);
@@ -94,7 +94,7 @@ class MultilingualPlugin extends Gdn_Plugin {
       // Add a simple style
       $Sender->AddAsset('Head', '<style>.Dashboard .LocaleOptions { display: none; }</style>');
       
-      $Sender->setData('Locale', Gdn::Locale()->Current());
+      $Sender->setData('Locale', substr(Gdn::Locale()->Current(), 0, 2));
    }
    
    /**

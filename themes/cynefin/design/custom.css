@@ -148,7 +148,7 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
 }
 
 .languages {
-  position: absolute;
+  position: fixed;
   top: 43px;
   right: 20px;
   z-index: 300;
@@ -165,7 +165,7 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   color: #000 !important;
 }
 
-.languages .LocaleOption:first-child a:after{
+.languages .LocaleOption:first-child:after{
   padding: 0 4px;
   color: #000;
   text-decoration: none !important;
