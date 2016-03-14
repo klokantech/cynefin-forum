@@ -18,24 +18,18 @@
         <!-- {profile_link}
         {signinout_link}
         </ul>-->
-
         <nav id="navigation">
           <ul>
-            <li><a href="http://cynefin.archiveswales.org.uk/en/">Home</a></li>
-            <li><a href="http://cynefin.archiveswales.org.uk/en/tithe-maps/">Tithe maps</a></li>
-            <li><a href="http://cynefin.archiveswales.org.uk/en/sample-page-2/">The Project</a></li>
-            <li class="active"><a href="http://cynefin.archiveswales.org.uk/forum/">Forum</a></li>
-            <li><a href="http://cynefin.archiveswales.org.uk/en/contributors/">Contributors</a></li>
-            <li><a href="http://cynefin.archiveswales.org.uk/en/contact/">Contact</a></li>
-            <li><a href="http://cynefin.archiveswales.org.uk/en/blog/">Blog</a></li>
+            <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/">{if $Locale == 'cy'}Hafan{else}Home{/if}</a></li>
+            <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/tithe-maps/">{if $Locale == 'cy'}Mapiau degwm{else}Tithe maps{/if}</a></li>
+            <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/sample-page-2/">{if $Locale == 'cy'}Y Prosiect{else}The Project{/if}</a></li>
+            <li><a href="http://cynefin.archiveswales.org.uk/en/take-part/">{if $Locale == 'cy'}Gwirfoddoli Ar-lein{else}Volunteer Online{/if}</a></li>
+            <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/contributors/">{if $Locale == 'cy'}Cyfranwyr{else}Contributors{/if}</a></li>
+            <li class="active"><a href="http://cynefin.archiveswales.org.uk/forum/">{if $Locale == 'cy'}Forum{else}Forum{/if}</a></li>
+            <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/blog/">{if $Locale == 'cy'}Blog{else}Blog{/if}</a></li>
           </ul>
         </nav>
 
-        <div class="languages">
-          <a href="http://cynefin.archiveswales.org.uk/cy/" title="Cymraeg">Cymraeg</a>
-          <span class="sep">|</span>
-          <a href="http://cynefin.archiveswales.org.uk/en/" class="active" title="English">English</a>
-        </div>
         <div id="userbox">
           <span id="userbox-name">...</span>
           <span id="userbox-signout" style="display:none;">(<a href="http://cynefin.georeferencer.com/accounts/logout/?next=http://cynefin.archiveswales.org.uk/forum/">Sign Out</a>)</span>

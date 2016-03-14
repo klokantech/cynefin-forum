@@ -93,6 +93,8 @@ class MultilingualPlugin extends Gdn_Plugin {
       
       // Add a simple style
       $Sender->AddAsset('Head', '<style>.Dashboard .LocaleOptions { display: none; }</style>');
+      
+      $Sender->setData('Locale', Gdn::Locale()->Current());
    }
    
    /**
