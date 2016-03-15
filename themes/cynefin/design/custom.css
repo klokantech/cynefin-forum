@@ -43,7 +43,6 @@ a:hover {
 #header {
   position: fixed;
   min-width: 640px;
-  text-align: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -144,6 +143,22 @@ li:nth-child(6) {background-position: -1200px 0 !important;}
   #navigation ul li a {
     margin: 0 3px;
     padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .logo {
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+    margin: 0 -35px;
+  }
+  #navigation ul li a {
+    margin: 0 2px !important;
+    padding: 0 5px !important;
+    font-size: 13px;
   }
 }
 
