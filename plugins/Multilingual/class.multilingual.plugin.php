@@ -69,8 +69,9 @@ class MultilingualPlugin extends Gdn_Plugin {
    public function Base_Render_Before($Sender) {
       // Not in Dashboard
       // Block guests until guest sessions are restored
-      if ($Sender->MasterView == 'admin' || !CheckPermission('Garden.SignIn.Allow'))
+      if ($Sender->MasterView == 'admin'){
          return;
+      }
       
       // Get locales
       $LocaleModel = new LocaleModel();
@@ -126,18 +127,13 @@ class MultilingualPlugin extends Gdn_Plugin {
     * Allow user to set their preferred locale via link-click.
     */
    public function ProfileController_SetLocale_Create($Sender, $Args = array()) {
-      // Check intent
-      if (isset($Args[1]))
-         Gdn::Session()->ValidateTransientKey($Args[1]);
-      else Redirect($_SERVER['HTTP_REFERER']);
       
       // If we got a valid locale, save their preference
       if (isset($Args[0])) {
          $Locale = $this->ValidateLocale($Args[0]);
          if ($Locale) {
             Gdn::Session()->Stash('Locale', $Locale);
-            if (CheckPermission('Garden.SignIn.Allow'))
-               $this->SetUserMeta(Gdn::Session()->UserID, 'Locale', $Locale);
+            $this->SetUserMeta(0, 'Locale', $Locale);
          }
       }
       
