@@ -25,7 +25,7 @@
             <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/sample-page-2/">{if $Locale == 'cy'}Y Prosiect{else}The Project{/if}</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/en/take-part/">{if $Locale == 'cy'}Gwirfoddoli Ar-lein{else}Volunteer Online{/if}</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/contributors/">{if $Locale == 'cy'}Cyfranwyr{else}Contributors{/if}</a></li>
-            <li class="active"><a href="http://cynefin.archiveswales.org.uk/forum/">{if $Locale == 'cy'}Forum{else}Forum{/if}</a></li>
+            <li class="active"><a href="http://cynefin.archiveswales.org.uk/forum/">{if $Locale == 'cy'}Fforwm{else}Forum{/if}</a></li>
             <li><a href="http://cynefin.archiveswales.org.uk/{$Locale}/blog/">{if $Locale == 'cy'}Blog{else}Blog{/if}</a></li>
           </ul>
         </nav>
